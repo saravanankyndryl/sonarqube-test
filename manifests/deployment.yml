@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: tomcat3
+  name: tomcat13
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: tomcat3
+      app: tomcat13
   template:
     metadata:
       labels:
-        app: tomcat3
+        app: tomcat13
     spec:
       containers:
-        - name: tomcat3
+        - name: tomcat13
           image: mcdsdevsecops.azurecr.io/tomcat
           ports:
           - containerPort: 80
